@@ -42,6 +42,11 @@
             bindings = <&to 0>;
             key-positions = <28 29>;
         };
+
+        layer_5 {
+            bindings = <&mo 5>;
+            key-positions = <37 40>;
+        };
     };
 
     behaviors {
