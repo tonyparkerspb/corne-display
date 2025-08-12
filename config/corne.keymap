@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
@@ -41,6 +42,11 @@
         to_base_layer {
             bindings = <&to 0>;
             key-positions = <28 29>;
+        };
+
+        layer_5 {
+            bindings = <&mo 5>;
+            key-positions = <37 40>;
         };
     };
 
@@ -377,10 +383,10 @@
 
         navigation {
             bindings = <
-&trans  &kp N1          &kp N2      &kp N3      &kp N4      &kp N5           &kp N6    &kp N7    &kp N8     &kp N9         &kp N0  &trans
-&trans  &kp LEFT_SHIFT  &kp LC(N9)  &kp LC(N8)  &kp LC(N7)  &kp PG_UP        &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT      &trans  &trans
-&trans  &kp LCTRL       &mo 3       &mo 4       &kp LC(A)   &kp PAGE_DOWN    &trans    &trans    &kp CARET  &kp AMPERSAND  &trans  &trans
-                                    &trans      &trans      &trans           &trans    &trans    &mo 5
+&trans  &kp N1          &kp N2      &kp N3      &kp N4      &kp N5           &kp N6      &kp N7    &kp N8     &kp N9         &kp N0  &trans
+&trans  &kp LEFT_SHIFT  &kp LC(N9)  &kp LC(N8)  &kp LC(N7)  &kp PG_UP        &kp LEFT    &kp DOWN  &kp UP     &kp RIGHT      &trans  &trans
+&trans  &kp LCTRL       &mo 3       &mo 4       &kp LC(A)   &kp PAGE_DOWN    &kp LG(F7)  &trans    &kp CARET  &kp AMPERSAND  &trans  &trans
+                                    &trans      &trans      &trans           &trans      &trans    &mo 5
             >;
         };
 
